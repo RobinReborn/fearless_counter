@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState('');
   function get_count(){
-    fetch('https://api.countapi.xyz/hit/namespace/key')
+    fetch('https://api.countapi.xyz/hit/robinsproject/key')
     .then(response => response.json())
     .then(data => setCount(data.value));
   }
